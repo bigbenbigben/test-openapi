@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Login & Register</title>
+</head>
+<body>
+  <h1>Welcome to the API!</h1>
+
+  <!-- ユーザー登録フォーム -->
+  <h2>Register New User</h2>
+  <form id="registerForm">
+    <label for="registerUsername">Username:</label><br>
+    <input type="text" id="registerUsername" name="username" required><br><br>
+
+    <button type="button" id="toggleResistorPassword">Show Password</button><br><br>
+    <label for="registerPassword">Password:</label><br>
+    <input type="password" id="registerPassword" name="password" required><br><br>
+    <button type="submit">Register</button>
+  </form>
+
+  <div id="registerMessage"></div>
+
+  <hr>
+
+  <!-- ログインフォーム -->
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <button type="button" id="toggleLoginPassword">Show Password</button><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="loginMessage"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
